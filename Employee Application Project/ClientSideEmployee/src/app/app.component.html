@@ -1,18 +1,29 @@
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
   <a href="#" class="navbar-brand">
-    <img src="../assets/ness.png" width="30" height="30" class="rounded d-inline-block " alt="">
+    <img src="../assets/ness.png" width="50" height="50" class="rounded " alt="">
     <h1>Ness Digital Engineering</h1>
   </a>
+  <!-- <form class="form-inline nav-item">
+    <button  class="navbar-link btn btn-secondary " routerlink="employees" routerLinkActive="active" type="button">
+      Employee List
+    </button>
+    <button  class="navbar-link btn btn-secondary " routerlink="add" routerLinkActive="active" type="button" style="margin-left: 40px;">
+      Add Employee
+    </button>
+    </form> -->
   <ul class="navbar-nav">
-    <li class="navbar-item float-left">
-      <a routerlink="employees" class="nav-link" routerLinkActive="active">Employee List</a>
+    <li class="nav-item">
+      <a class="btn btn-secondary btn-lg" routerlink="employees" class="nav-link" routerLinkActive="active-link" role="button">Employee List</a>
     </li>
-    <li class="navbar-item float-left">
-      <a routerlink="add" class="nav-link" routerLinkActive="active">Add Employee</a>
+    <li class="navbar-item">
+      <a class="btn btn-secondary btn-lg" routerlink="add" class="nav-link " routerLinkActive="active-link" role="button">Add Employee</a>
     </li>
   </ul>
 </nav>
-<div class="container">
+
+<div class="container" >
+  <br>
+  <h2 style="text-align: center;">{{title}}</h2>
   <br>
   <div class="card">
     <div class="card-body">
@@ -20,8 +31,9 @@
     </div>
   </div>
 </div>
-<footer>
+
+<footer class="f1">
   <div class="container">
-    <span>All Rights Reserved @BidhuDash</span>
+    <span>All Rights Reserved 2021 @BidhuDash</span>
   </div>
 </footer>

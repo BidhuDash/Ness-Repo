@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 
@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class EmployeeService {
 
-  private baseUrl ='http://localhost:8080/api/employee';
+  private baseUrl ='http://localhost:8080/api/employee/';
 
   constructor(private http: HttpClient) { }
 
@@ -19,10 +19,10 @@ export class EmployeeService {
     return this.http.post(`${this.baseUrl}/createemployee`, employee);
   }
   updateEmployee(id: number, value: any) : Observable<Object> {
-    return this.http.put(`${this.baseUrl}/updateemployee/${id}`,value);
+    return this.http.put(`${this.baseUrl}/updateemployee/${id}`, value);
   }
   deleteEmployee(id:number): Observable<any>{
-    return this.http.delete(`${this.baseUrl}/deleteemployee/${id}`,{responseType:"text"});
+    return this.http.delete(`${this.baseUrl}/deleteemployee/${id}`,{responseType: "text"});
   }
   getEmployeesList():Observable<any>{
     return this.http.get(`${this.baseUrl}/allemployees`)
