@@ -1,4 +1,27 @@
-<body>
-  <H1>Bidhu Dash</H1>
-  <div><input type="button" class="btn btn-primary" value="button"></div>
-</body>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <a href="#" class="navbar-brand">
+    <img src="../assets/ness.png" width="30" height="30" class="rounded d-inline-block " alt="">
+    <h1>Ness Digital Engineering</h1>
+  </a>
+  <ul class="navbar-nav">
+    <li class="navbar-item float-left">
+      <a routerlink="employees" class="nav-link" routerLinkActive="active">Employee List</a>
+    </li>
+    <li class="navbar-item float-left">
+      <a routerlink="add" class="nav-link" routerLinkActive="active">Add Employee</a>
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <span>All Rights Reserved @BidhuDash</span>
+  </div>
+</footer>
