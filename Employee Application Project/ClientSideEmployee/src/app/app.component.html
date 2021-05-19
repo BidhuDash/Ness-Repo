@@ -1,29 +1,21 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+<nav class="navbar navbar-dark-expand-sm bg-primary navbar-dark">
   <a href="#" class="navbar-brand">
-    <img src="../assets/ness.png" width="50" height="50" class="rounded " alt="">
+    <img src="../assets/ness.png" width="50" height="50" class="rounded">
     <h1>Ness Digital Engineering</h1>
   </a>
-  <!-- <form class="form-inline nav-item">
-    <button  class="navbar-link btn btn-secondary " routerlink="employees" routerLinkActive="active" type="button">
-      Employee List
-    </button>
-    <button  class="navbar-link btn btn-secondary " routerlink="add" routerLinkActive="active" type="button" style="margin-left: 40px;">
-      Add Employee
-    </button>
-    </form> -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="btn btn-secondary btn-lg" routerlink="employees" class="nav-link" routerLinkActive="active-link" role="button">Employee List</a>
-    </li>
-    <li class="navbar-item">
-      <a class="btn btn-secondary btn-lg" routerlink="add" class="nav-link " routerLinkActive="active-link" role="button">Add Employee</a>
-    </li>
-  </ul>
+  <div class="navbar-nav ">
+    <div class="nav-link">
+      <a class=" btn btn-secondary btn-lg active" routerLink="/employees" routerLinkActive="active" role="button">Employee
+        List</a>
+      <a class="btn btn-secondary btn-lg active" routerLink="/add" routerLinkActive="active" role="button"
+        style="margin-left: 20px;">Add Employee</a>
+    </div>
+  </div>
 </nav>
 
-<div class="container" >
+<div class="container" style="box-sizing: border-box;">
   <br>
-  <h2 style="text-align: center;">{{title}}</h2>
+  <h2 style="text-align: center;">Employee Database</h2>
   <br>
   <div class="card">
     <div class="card-body">
